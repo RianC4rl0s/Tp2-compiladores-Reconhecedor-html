@@ -1,0 +1,3 @@
+/home/rian/Compiladores/Tp2_reconhecedor_html_Rian_Carlos/Build/CMakeFiles/rebuild_cache.dir
+/home/rian/Compiladores/Tp2_reconhecedor_html_Rian_Carlos/Build/CMakeFiles/edit_cache.dir
+/home/rian/Compiladores/Tp2_reconhecedor_html_Rian_Carlos/Build/CMakeFiles/sample.dir

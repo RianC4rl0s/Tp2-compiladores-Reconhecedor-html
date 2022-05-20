@@ -1,0 +1,133 @@
++--<html>
+|	+--<head>
+|	|	+--<style>
+|	|	+--</style>
+|	|	+--<title>
+|	|	|	+--Texto[3]
+|	|	+--</title>
+|	+--</head>
+|	+--<body>
+|	|	+--<h1>
+|	|	|	+--Texto[20]
+|	|	+--</h1>
+|	|	+--<h2>
+|	|	|	+--Texto[12]
+|	|	+--</h2>
+|	|	+--<p>
+|	|	|	+--<b>
+|	|	|	|	+--Texto[3]
+|	|	|	+--</b>
+|	|	|	+--Texto[81]
+|	|	|	+--Texto[134]
+|	|	|	+--Texto[135]
+|	|	|	+--Texto[140]
+|	|	+--</p>
+|	|	+--<h2>
+|	|	|	+--Texto[7]
+|	|	+--</h2>
+|	|	+--<p>
+|	|	|	+--Texto[135]
+|	|	|	+--Texto[78]
+|	|	|	+--<i>
+|	|	|	|	+--Texto[11]
+|	|	|	+--</i>
+|	|	|	+--Texto[41]
+|	|	|	+--Texto[104]
+|	|	+--</p>
+|	|	+--<table width="400">
+|	|	|	+--<tr>
+|	|	|	|	+--<th align="center">
+|	|	|	|	|	+--Texto[4]
+|	|	|	|	+--</th>
+|	|	|	|	+--<th align="center">
+|	|	|	|	|	+--Texto[9]
+|	|	|	|	+--</th>
+|	|	|	|	+--<th align="center">
+|	|	|	|	|	+--Texto[8]
+|	|	|	|	+--</th>
+|	|	|	|	+--<th align="center">
+|	|	|	|	|	+--Texto[7]
+|	|	|	|	+--</th>
+|	|	|	+--</tr>
+|	|	|	+--<tr>
+|	|	|	|	+--<td align="center">
+|	|	|	|	|	+--Texto[3]
+|	|	|	|	+--</td>
+|	|	|	|	+--<td align="center">
+|	|	|	|	|	+--Texto[3]
+|	|	|	|	+--</td>
+|	|	|	|	+--<td align="center">
+|	|	|	|	|	+--Texto[1]
+|	|	|	|	+--</td>
+|	|	|	|	+--<td align="center">
+|	|	|	|	|	+--Texto[4]
+|	|	|	|	+--</td>
+|	|	|	+--</tr>
+|	|	|	+--<tr>
+|	|	|	|	+--<td align="center">
+|	|	|	|	|	+--Texto[4]
+|	|	|	|	+--</td>
+|	|	|	|	+--<td align="center">
+|	|	|	|	|	+--Texto[3]
+|	|	|	|	+--</td>
+|	|	|	|	+--<td align="center">
+|	|	|	|	|	+--Texto[5]
+|	|	|	|	+--</td>
+|	|	|	|	+--<td align="center">
+|	|	|	|	|	+--Texto[3]
+|	|	|	|	+--</td>
+|	|	|	+--</tr>
+|	|	+--</table>
+|	|	+--<h2>
+|	|	|	+--Texto[23]
+|	|	+--</h2>
+|	|	+--<p>
+|	|	|	+--Texto[135]
+|	|	|	+--Texto[52]
+|	|	+--</p>
+|	|	+--<ul>
+|	|	|	+--<li>
+|	|	|	|	+--Texto[4]
+|	|	|	|	+--<b>
+|	|	|	|	|	+--Texto[10]
+|	|	|	|	+--</b>
+|	|	|	|	+--Texto[62]
+|	|	|	+--</li>
+|	|	|	+--<li>
+|	|	|	|	+--Texto[4]
+|	|	|	|	+--<b>
+|	|	|	|	|	+--Texto[5]
+|	|	|	|	+--</b>
+|	|	|	|	+--Texto[66]
+|	|	|	+--</li>
+|	|	|	+--<li>
+|	|	|	|	+--Texto[4]
+|	|	|	|	+--<b>
+|	|	|	|	|	+--Texto[4]
+|	|	|	|	+--</b>
+|	|	|	|	+--Texto[99]
+|	|	|	+--</li>
+|	|	+--</ul>
+|	|	+--<h2>
+|	|	|	+--Texto[24]
+|	|	+--</h2>
+|	|	+--<p>
+|	|	|	+--Texto[36]
+|	|	+--</p>
+|	|	+--<br>
+|	|	+--<img src="Images/lex.png" alt="Lex Sample" width="459" height="496">
+|	|	+--<br>
+|	|	+--<p>
+|	|	|	+--Texto[37]
+|	|	|	+--<a href="https://en.wikipedia.org/wiki/Lex_(software)">
+|	|	|	|	+--Texto[9]
+|	|	|	+--</a>
+|	|	|	+--Texto[1]
+|	|	+--</p>
+|	|	+--<br>
+|	+--</body>
++--</html>
+
+Tags HTML: 45
+Linhas: 84
+Caracteres : 1533

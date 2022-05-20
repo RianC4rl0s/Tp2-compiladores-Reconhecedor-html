@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../tokens.h
+
+/home/rian/Compiladores/Tp2_reconhecedor_html_Rian_Carlos/Build/lex.yy.cc
+inttypes.h
+-
+iostream
+-
+errno.h
+-
+cstdlib
+-
+cstdio
+-
+cstring
+-
+FlexLexer.h
+-
+iostream
+-
+tokens.h
+/home/rian/Compiladores/Tp2_reconhecedor_html_Rian_Carlos/Build/tokens.h
+unistd.h
+-
+
