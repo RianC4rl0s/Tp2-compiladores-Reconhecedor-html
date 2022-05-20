@@ -5,7 +5,9 @@ using std::cout;
 
 void Parser::Start()
 {
+    //Contador de carcteres
     int textChar = 0;
+    //Contador de espaços(usando para tabulação)
     int spaces = 0;
     while ((lookahead = scanner.yylex()) != 0)
     {
@@ -13,10 +15,9 @@ void Parser::Start()
         switch (lookahead)
         {
         case TEXT:
-            // cout << "TEXT: " << scanner.YYText() << "\n";
+            // se spaces > 0 coloque | + tabulação numero de vezes de space
             if (spaces > 0)
             {
-                // cout << "|";
                 for (int i = 0; i < spaces; i++)
                 {
                     cout << "|\t";
@@ -27,35 +28,38 @@ void Parser::Start()
             textChar+=scanner.YYLeng();
             break;
         case DOCTYPE:
-            // cout << "DOCTYPE: " << scanner.YYText() << "\n";
+            // se doctype n faça nada
             ;
             break;
         case TAGNAME:
-            // cout << "TAGNAME: " << scanner.YYText() << "\n";
+            // se nome de tag n faça nada
             ;
             break;
         case COMMENT:
-            // cout << "COMMENT: " << scanner.YYText() << "\n";
+            // se comentario ignore
             ;
             break;
         case TAG:
+            // se spaces > 0 
             if (spaces > 0)
             {
-                // cout << "|";
+                // para cada space coloque | \p
                 for (int i = 0; i < spaces; i++)
                 {
-                    // cout << " ";
+            
                     cout << "|\t";
                 }
                
             }
             cout << "+--" << scanner.YYText() << "\n";
+            //conte linha
             tagCounter += 1;
+            //conte space
             spaces += 1;
             break;
         case CLOSETAG:
-            spaces -= 1;
-            if (spaces > 0)
+            spaces -= 1;//diminua o tamanho de spaces antes de realiza o for
+            if (spaces > 0)//mesmo for que acontece quando abre tag
             {
                 // cout << "|";
                 for (int i = 0; i < spaces; i++)
@@ -69,23 +73,23 @@ void Parser::Start()
             ;
             break;
         case ONLYOPENINGTAG:
-            if (spaces > 0)
+            if (spaces > 0)//mesmo for que acontece quando abre tag ou fecha
             {
-                // cout << "|";
                 for (int i = 0; i < spaces; i++)
                 {
-                    // cout << " ";
+
                     cout << "|\t";
                 }
             }
             cout << "+--" << scanner.YYText() << "\n";
-            tagCounter += 1;
-            // lineCounter++;
+            tagCounter += 1;//conta tag
+            // spaces não incrementa pois essa tag não criou um novo escopo 
             break;
         case EOL:
-            lineCounter++;
+            lineCounter++;//Contalinha
             break;
         case ONPENSTYLE:
+        
         break;
         }
     }

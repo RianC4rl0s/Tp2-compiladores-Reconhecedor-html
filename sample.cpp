@@ -3,36 +3,32 @@
 #include <fstream>
 using namespace std;
 
-char **fileList;
-unsigned nFiles;
-unsigned currentFile = 0;
-bool openFile = false;
-unsigned long charCount = 0, wordCount = 0, lineCount = 0;
-unsigned long totalCC = 0, totalWC = 0, totalLC = 0;
 ifstream fin;
 
 int main(int argc, char **argv)
 {
-	//yyFlexLexer lexer;
+	//Criando parser
 	Parser parser;
-	if (argc > 1)
+	if (argc > 1)//Verificando se tem mais de um argumento na inicialização
 	{
-		fin.open(argv[1]);
+		fin.open(argv[1]);//abrinrindo arquivo
 		if (!fin.is_open())
-		{
-			cout << "Não foi possivel abrir o arquivo:" << argv[1] << "\n"; 
+		{	//se nao abrir
+			cout << "Não foi possivel abrir o arquivo:" << argv[1] << "\n";
 			exit(EXIT_FAILURE);
-		}else{
-			// lexer.switch_streams(&fin);
+		}
+		else
+		{
+			//se abrir mude a string do lexer
 			parser.switchStreams(&fin);
 		}
 	}
 	else
 	{
 	}
-	parser.Start();
+	parser.Start();//iniciando o parser
 
-	fin.close();
+	fin.close();//fechando o arquivo
 
 	// lexer.yylex();
 }

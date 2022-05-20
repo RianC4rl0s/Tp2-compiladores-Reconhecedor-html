@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Sample)
+project(HtmlReader)
 
 # Configuração do C++
 set(CMAKE_BUILD_TYPE Release)
@@ -13,4 +13,4 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 include_directories(${CMAKE_SOURCE_DIR})
 
 # Executável depende também da saída do Flex
-add_executable(sample ${SOURCES} ${FLEX_Lexer_OUTPUTS})
+add_executable(htmlr ${SOURCES} ${FLEX_Lexer_OUTPUTS})
