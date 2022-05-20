@@ -9,6 +9,7 @@ void Parser::Start()
     int textChar = 0;
     //Contador de espaços(usando para tabulação)
     int spaces = 0;
+    //Lexer começa a ler os tokens do arquivo
     while ((lookahead = scanner.yylex()) != 0)
     {
         // trata o token recebido do analisador léxico
@@ -25,7 +26,7 @@ void Parser::Start()
               
             }
             cout << "+--Texto[" << scanner.YYLeng() << "]\n";
-            textChar+=scanner.YYLeng();
+            textChar+=scanner.YYLeng();//Conta a quantidade de caracteres exibidas
             break;
         case DOCTYPE:
             // se doctype n faça nada
@@ -88,12 +89,9 @@ void Parser::Start()
         case EOL:
             lineCounter++;//Contalinha
             break;
-        case ONPENSTYLE:
-        
-        break;
         }
     }
-
+    //Exibe dados
     cout << endl;
     cout << "==============================\n";
     cout << "Número de Tags: " << tagCounter << "\n";

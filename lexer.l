@@ -24,25 +24,22 @@ onlyopeningtag  <(img|br){attr}*[ ]*\/?>
 
 
 %%
-{brancos}	        ; // nenhuma ação e nenhum retorno 
-{eol}               return EOL;
-{doctype}           return DOCTYPE;
-{comment}           return COMMENT;
-"<style>"           {BEGIN STYLE; return TAG;}
+{brancos}	        ;                                   // nenhuma ação e nenhum retorno 
+{eol}               return EOL;                         //fim de linha
+{doctype}           return DOCTYPE;                     //doctype
+{comment}           return COMMENT;                     //comentario
+"<style>"           {BEGIN STYLE; return TAG;}          //ignorar estilo de css
 <STYLE>"</style>"   {BEGIN INITIAL; return CLOSETAG;}
 <STYLE>{eol}        return EOL;
 <STYLE>({text})+    ;         
-{tag}               return TAG;
-{closetag}          return CLOSETAG;
-{onlyopeningtag}    return ONLYOPENINGTAG;
-{text}              return TEXT;
+{tag}               return TAG;                         //tag html
+{closetag}          return CLOSETAG;                    //fim tag
+{onlyopeningtag}    return ONLYOPENINGTAG;              //tag sem fechamento
+{text}              return TEXT;                        //texto
 %%
 /* 
-{styleCss} return ONPENSTYLE;
-styleCss    [\t ][A-Za-z0-9\-]*[ ]\{[.\n ]*\}
-
-{attr}        return TEXT;
-{tagName}     return TAGNAME; */
-/* .           cout << YYText() << " é um token inválido!\n";  */
+ OBSERVAÇOES
+ 
+ */
 
 // nenhuma função auxiliar é necessária
